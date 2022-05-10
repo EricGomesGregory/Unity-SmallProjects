@@ -1,0 +1,31 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 15d4904a1e9cd4f4faadded7bd209d22, type: 3}
+  m_Name: Demo
+  m_EditorClassIdentifier: 
+  entries:
+  - rid: 259305652810678289
+  - rid: 259305652810678290
+  references:
+    version: 2
+    RefIds:
+    - rid: 259305652810678289
+      type: {class: HeaderData, ns: , asm: Assembly-CSharp}
+      data:
+        name: Title
+        type: 0
+        data: Demo Text
+    - rid: 259305652810678290
+      type: {class: ParagraphData, ns: , asm: Assembly-CSharp}
+      data:
+        name: Paragraph
+        data: This is a demo text for a text display system.

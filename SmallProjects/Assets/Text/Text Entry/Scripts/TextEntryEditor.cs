@@ -33,5 +33,12 @@ public class TextEntryEditor : Editor
         {
             myTarget.entries.Add(new SpacerData());
         }
+
+        GUILayout.Space(25f);
+
+        if (GUILayout.Button("Clear"))
+        {
+            myTarget.entries = new List<TextEntryData>();
+        }
     }
 }
