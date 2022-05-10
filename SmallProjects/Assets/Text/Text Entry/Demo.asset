@@ -15,6 +15,15 @@ MonoBehaviour:
   entries:
   - rid: 259305652810678289
   - rid: 259305652810678290
+  - rid: 259305760955039744
+  - rid: 259305760955039745
+  - rid: 259305760955039748
+  - rid: 259305760955039746
+  - rid: 259305760955039747
+  - rid: 259305760955039750
+  - rid: 259305760955039749
+  - rid: 259305760955039751
+  - rid: 259305760955039752
   references:
     version: 2
     RefIds:
@@ -28,4 +37,53 @@ MonoBehaviour:
       type: {class: ParagraphData, ns: , asm: Assembly-CSharp}
       data:
         name: Paragraph
-        data: This is a demo text for a text display system.
+        data: This is a <b> demo </b> text for a text display system.
+    - rid: 259305760955039744
+      type: {class: ImageData, ns: , asm: Assembly-CSharp}
+      data:
+        name: Image
+        data: {fileID: 0}
+        size: {x: 25, y: 25}
+    - rid: 259305760955039745
+      type: {class: ParagraphData, ns: , asm: Assembly-CSharp}
+      data:
+        name: Image Subtitle
+        data: <align="center"> <i> This is a subtitle for a image. </i>
+    - rid: 259305760955039746
+      type: {class: HeaderData, ns: , asm: Assembly-CSharp}
+      data:
+        name: Header 2
+        type: 1
+        data: Section
+    - rid: 259305760955039747
+      type: {class: ParagraphData, ns: , asm: Assembly-CSharp}
+      data:
+        name: Paragraph
+        data: This is a paragraph following a header 2.
+    - rid: 259305760955039748
+      type: {class: SpacerData, ns: , asm: Assembly-CSharp}
+      data:
+        name: Spacer
+        space: 3
+    - rid: 259305760955039749
+      type: {class: HeaderData, ns: , asm: Assembly-CSharp}
+      data:
+        name: Header 3
+        type: 2
+        data: Another Subsection
+    - rid: 259305760955039750
+      type: {class: SpacerData, ns: , asm: Assembly-CSharp}
+      data:
+        name: Spacer
+        space: 1
+    - rid: 259305760955039751
+      type: {class: ImageData, ns: , asm: Assembly-CSharp}
+      data:
+        name: Image
+        data: {fileID: 0}
+        size: {x: 50, y: 50}
+    - rid: 259305760955039752
+      type: {class: SpacerData, ns: , asm: Assembly-CSharp}
+      data:
+        name: Spacer
+        space: 10

@@ -34,6 +34,11 @@ public class TextEntryEditor : Editor
             myTarget.entries.Add(new SpacerData());
         }
 
+        if (GUILayout.Button("Add Image"))
+        {
+            myTarget.entries.Add(new ImageData());
+        }
+
         GUILayout.Space(25f);
 
         if (GUILayout.Button("Clear"))

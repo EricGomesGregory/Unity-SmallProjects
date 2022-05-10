@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 using TMPro;
 
 public class TextDisplay : MonoBehaviour
@@ -11,6 +12,7 @@ public class TextDisplay : MonoBehaviour
     [SerializeField] TextMeshProUGUI header;
     [SerializeField] TextMeshProUGUI paragraph;
     [SerializeField] RectTransform spacer;
+    [SerializeField] Transform image;
 
     Transform container;
 
@@ -60,7 +62,23 @@ public class TextDisplay : MonoBehaviour
                 SpacerData spacer = (SpacerData)entry;
 
                 var obj = Instantiate(this.spacer, container);
-                obj.sizeDelta = new Vector2(obj.rect.width, spacer.Space);
+                
+                LayoutElement layout = obj.GetComponent<LayoutElement>();
+
+                layout.minHeight = spacer.Space;
+                layout.preferredHeight = spacer.Space;
+            }
+            else if (entry.GetType() == typeof(ImageData))
+            {
+                ImageData image = (ImageData)entry;
+
+                var obj = Instantiate(this.image, container);
+                obj.GetComponent<Image>().sprite = image.Data;
+                
+                LayoutElement layout = obj.GetComponent<LayoutElement>();
+                
+                layout.preferredWidth = image.Size.x;
+                layout.preferredHeight = image.Size.y;
             }
         }
     }

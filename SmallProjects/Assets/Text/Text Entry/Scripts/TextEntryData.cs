@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 using System;
 
 [Serializable]
@@ -78,5 +79,22 @@ public class SpacerData : TextEntryData
     {
         name = "Spacer";
         space = 1f;
+    }
+}
+
+
+public class ImageData : TextEntryData
+{
+    [Space]
+    [SerializeField] Sprite data;
+    [SerializeField, Min(1f)] Vector2 size;
+
+    public Sprite Data { get { return data; } }
+    public Vector2 Size { get { return size * 10f; } }
+
+    public ImageData()
+    {
+        name = "Image";
+        size = new Vector2(1f, 1f);
     }
 }
